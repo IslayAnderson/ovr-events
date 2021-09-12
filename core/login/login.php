@@ -5,7 +5,7 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 
 if(User::login($email, $password)){
-    header("Location: /admin");
+    header("Location: /dashboard");
 }else{
-    header("Location: /login");
+    header("Location: /login?login=failed");
 }

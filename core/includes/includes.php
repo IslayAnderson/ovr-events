@@ -15,3 +15,6 @@ include_once __DIR__ . '/classes/Event.php';
 if(!$nomod){
     include_once __DIR__ . '/modules/pages.php';
 }
+
+//globals
+$current_user = new User($_COOKIE['user_id']);

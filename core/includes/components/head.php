@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>MyResume Bootstrap Template - Index</title>
+    <title>Events by OVR Toolkit</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -31,13 +31,7 @@
 <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
-        <ul>
-            <li><a href="https://event.liamanderson.co.uk/" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="https://event.liamanderson.co.uk/events" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Events</span></a></li>
-            <li><a href="https://event.liamanderson.co.uk/categories" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Categories</span></a></li>
-            <li><a href="https://event.liamanderson.co.uk/games" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Games</span></a></li>
-            <li><a href="https://event.liamanderson.co.uk/login" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>login</span></a></li>
-        </ul>
+        <?php include_once __DIR__ . '/menus/'.$menu.'.php'; ?>
     </nav><!-- .nav-menu -->
 
 </header><!-- End Header -->
