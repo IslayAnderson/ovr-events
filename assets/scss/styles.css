@@ -9373,4 +9373,11 @@ main {
   width: calc(100% - 175px);
   padding: 5px; }
 
+.event__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+.event__date {
+  float: right; }
+
 /*# sourceMappingURL=styles.css.map */

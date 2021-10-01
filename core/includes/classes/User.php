@@ -39,6 +39,7 @@ class user
 
         if (isset($_COOKIE['user_id'])) {
             setcookie( 'user_id', "", time() - 3600, "/", "event.liamanderson.co.uk", true, true );
+            setcookie( 'hash', "", time() - 3600, "/", "event.liamanderson.co.uk", true, true );
             session_destroy();
             return true;
         } else {
