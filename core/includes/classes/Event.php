@@ -66,4 +66,13 @@ class Event
         $results = $data->Fetch($sql, null);
         return $results;
     }
+
+    public static function getSelects(){
+        $sql = "SELECT * from categories";
+        $sql2 = "SELECT * from games";
+        $data = new DataAccess();
+        $results = $data->Fetch($sql, null);
+        $results2 = $data->Fetch($sql2, null);
+        return array('categories'=>$results, 'games'=>$results2);
+    }
 }
