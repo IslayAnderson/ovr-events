@@ -75,4 +75,16 @@ class Event
         $results2 = $data->Fetch($sql2, null);
         return array('categories'=>$results, 'games'=>$results2);
     }
+    public static function getEventByCat($order, $cat){
+        $sql = "SELECT * from events where instr(categories, '".$cat."') > 0 ".$order;
+        $data = new DataAccess();
+        $results = $data->Fetch($sql, null);
+        return $results;
+    }
+    public static function getEventByGame($order, $game){
+        $sql = "SELECT * from events where instr(game, '".$game."') > 0 ".$order;
+        $data = new DataAccess();
+        $results = $data->Fetch($sql, null);
+        return $results;
+    }
 }

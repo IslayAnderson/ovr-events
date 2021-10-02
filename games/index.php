@@ -10,31 +10,31 @@ $selects = Event::getSelects();
 
 switch($_GET['order']){
     case "dateASC":
-        $events = Event::getEventByCat('order by date ASC', filter_var($_GET['cat'], FILTER_SANITIZE_STRING));
+        $events = Event::getEventByGame('order by date ASC', filter_var($_GET['game'], FILTER_SANITIZE_STRING));
         break;
     case "dateDESC":
-        $events = Event::getEventByCat('order by date DESC', filter_var($_GET['cat'], FILTER_SANITIZE_STRING));
+        $events = Event::getEventByGame('order by date DESC', filter_var($_GET['game'], FILTER_SANITIZE_STRING));
         break;
     case "titleASC":
-        $events = Event::getEventByCat('order by title ASC', filter_var($_GET['cat'], FILTER_SANITIZE_STRING));
+        $events = Event::getEventByGame('order by title ASC', filter_var($_GET['game'], FILTER_SANITIZE_STRING));
         break;
     case "titleDESC":
-        $events = Event::getEventByCat('order by title DESC', filter_var($_GET['cat'], FILTER_SANITIZE_STRING));
+        $events = Event::getEventByGame('order by title DESC', filter_var($_GET['game'], FILTER_SANITIZE_STRING));
         break;
     default:
-        $events = Event::getEventByCat('order by date ASC', filter_var($_GET['cat'], FILTER_SANITIZE_STRING));
+        $events = Event::getEventByGame('order by date ASC', filter_var($_GET['game'], FILTER_SANITIZE_STRING));
         break;
 }
 
 ?>
 
     <main class="container">
-        <h1>Categories</h1>
+        <h1>Games</h1>
         <div class="row d-flex flex-wrap flex-row ">
-            <form id="category-search" class="" method="get" action="/categories/">
-                <select name="cat">
-                    <?php foreach($selects['categories'] as $cat): ?>
-                        <option <?php if($cat->id == $_GET['cat']){ echo "selected";} ?> value="<?=$cat->id?>"><?=$cat->cat?></option>
+            <form id="category-search" class="" method="get" action="/games/">
+                <select name="game">
+                    <?php foreach($selects['games'] as $game): ?>
+                        <option <?php if($game->id == $_GET['game']){ echo "selected";} ?> value="<?=$game->id?>"><?=$game->game?></option>
                     <?php endforeach;?>
                 </select>
                 <select name="order">
