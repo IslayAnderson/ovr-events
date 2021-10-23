@@ -28,11 +28,17 @@ include_once $_SERVER["DOCUMENT_ROOT"] . '/core/includes/components/head.php';
             <div class="col col-lg-3 col-md-6 col-sm-12 px-1 pb-1">
                 <div class="card px-1">
                     <h3>Categories</h3>
+                    <div id="categories">
+                        <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/core/includes/modules/categories.php';?>
+                    </div>
                 </div>
             </div>
             <div class="col col-lg-3 col-md-6 col-sm-12 px-1 pb-1">
                 <div class="card px-1">
                     <h3>Games</h3>
+                    <div id="games">
+                        <?php include_once $_SERVER["DOCUMENT_ROOT"] . '/core/includes/modules/games.php';?>
+                    </div>
                 </div>
             </div>
         </div>

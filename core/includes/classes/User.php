@@ -168,7 +168,9 @@ class user
     }
 
     public static function newUsers(){
-        $sql = "SELECT * from `users` where date_joined > '".Date('Y-m-d', strtotime('last week')). " 00:00:00'";
+        //$sql = "SELECT * from `users` where date_joined > '".Date('Y-m-d', strtotime('last week')). " 00:00:00'";
+        $sql = "SELECT * from `users` "; //TODO: comment and return when done troubleshooting
+
         $data = new DataAccess();
         $results = $data->Fetch($sql, null);
 

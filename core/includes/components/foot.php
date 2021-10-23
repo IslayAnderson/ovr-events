@@ -17,10 +17,10 @@
 </footer><!-- End Footer -->
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/jquery/jquery.js"></script>
+<script src="https://event.liamanderson.co.uk/assets/js/jquery.js"></script>
 
 <!-- Template Main JS File -->
-<script src="assets/js/main.js.php"></script>
+<script src="https://event.liamanderson.co.uk/assets/js/main.js.php"></script>
 
 </body>
 

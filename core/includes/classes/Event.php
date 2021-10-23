@@ -61,7 +61,8 @@ class Event
 
     public static function getRecent(){
         $target = date('Y-m-d',strtotime('-1 week'));
-        $sql = "SELECT * from events where date > '".$target."' order by date desc";
+        //$sql = "SELECT * from events where date > '".$target."' order by date desc";
+        $sql = "SELECT * from events order by date desc"; //TODO: comment and return when done troubleshooting
         $data = new DataAccess();
         $results = $data->Fetch($sql, null);
         return $results;

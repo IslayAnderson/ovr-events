@@ -19,10 +19,11 @@
 
     <!-- Main CSS -->
     <link href="https://event.liamanderson.co.uk/assets/scss/styles.css" rel="stylesheet">
-    <link href="https://event.liamanderson.co.uk/assets/scss/fontawsome/fontawsome.css" rel="stylesheet">
+    <link href="https://event.liamanderson.co.uk/assets/scss/animate.min.css" rel="stylesheet">
+    <link href="https://event.liamanderson.co.uk/assets/scss/fontawsome/fontawesome.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="">
 
 <!-- ======= Mobile nav toggle button ======= -->
 <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -30,7 +31,7 @@
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex flex-column justify-content-center">
 
-    <nav id="navbar" class="navbar nav-menu">
+    <nav id="navbar" class="navbar nav-menu animate__animated animate__slideInLeft">
         <?php include_once __DIR__ . '/menus/'.$menu.'.php'; ?>
     </nav><!-- .nav-menu -->
 

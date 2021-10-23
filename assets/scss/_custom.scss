@@ -2,8 +2,32 @@
 
 $grey:#dcdcdc;
 
-main {
-  min-height: 90vh;
+html{
+  background: #000;
+  transition:background-color 3s;
+}
+
+body{
+  display: none;
+  background: #000;
+  overflow: hidden;
+  margin: 1vw;
+}
+
+#header{
+  padding: calc(1vw + 15px);
+}
+
+main.container{
+  overflow-y: scroll;
+  height: calc(100vh - 2vw);
+  color:#fff;
+}
+.card{
+  color: #1d1d20;
+}
+main.container::-webkit-scrollbar {
+  width:0px;
 }
 
 .profile{
@@ -33,4 +57,8 @@ main {
   &__date{
     float: right;
   }
+}
+
+select.btn{
+  height: 38px;
 }
